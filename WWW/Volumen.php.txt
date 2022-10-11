@@ -1,0 +1,13 @@
+<html>
+<body>
+<?php 
+$diametro = $_GET['diam'];
+$altura = $_GET['altu'];
+$radio = $diametro/2;
+$Pi = 3.141593;
+$volumen = $Pi*$radio*$radio*$altura;
+echo "<br/> EL VOLUMEN DEL CILINDRO ES: ".$volumen "METROS CUBICOS";
+?>
+
+</body>
+</html>

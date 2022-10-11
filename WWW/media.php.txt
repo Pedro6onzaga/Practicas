@@ -1,0 +1,15 @@
+<html>
+<body>
+<?php
+	$precio1 = $_GET['precio1'];
+	$precio2 = $_GET['precio2'];
+	$precio3 = $_GET['precio3'];
+$media = ($precio1+$precio2+$precio3)/3;
+echo"<br/> DATOS ESTABLECIDOS";
+echo"<br/> PRECIO DEL PRODUCTO 1 ESTABLECIDO:".$precio1. " EUROS";
+echo"<br/> PRECIO DEL PRODUCTO 1 ESTABLECIDO:".$precio2. " EUROS";
+echo"<br/> PRECIO DEL PRODUCTO 1 ESTABLECIDO:".$precio3. " EUROS <br/>";
+echo"<br/> EL PRECIO MEDIO DEL PRODUCTO ES DE:". $media. " EUROS";
+?>
+</body>
+</html>

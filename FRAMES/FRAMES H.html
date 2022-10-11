@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> FRAMES </title>						<!-- dividimos la pagina en partes pequeñas y en cada una de ellas visualizamos documentos diferentes, permiten presentar documentos con vistas multiples -->
+</head>								<!-- SINTAXIS: "<frameset rows = "valor1, valor2, valorn" cols = "valor3, valor4, valorn">......RESTO DE LA DEFINICION </frameset>" -->
+									<!-- VALORES PARA DEFINIR EL TAMAÑO DE FILAS Y COLUMNAS: pixels | % | * -->
+<frameset rows = "25%, 75%">
+<frame src ="/https://www.youtube.com/">
+<frame src ="/https://www.twitch.tv/">
+</frameset>
+
+<hr>								<!-- ETIQUETA DE NOFRAME --><!-- SINTAXIS: "<iframe src = "/URL DEL SITIO A MOSTRAR"-->
+<iframe src="/http://www.virtualnauta.com" width="100%">
+</iframe>
+
+<hr>
+<frameset rows = "80,*">
+<frame name = "alto" src = "top.htm">
+<frame name = "central" src = "central.htm">
+</frameset>
+
+
+</html>

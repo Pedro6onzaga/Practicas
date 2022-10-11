@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv='content.type' content='text/html; charset=utf-8' />
+<link href='2.css' rel='stylesheet' />
+</head>
+<body>
+<h2>Calcular CURP</h2>
+<table>
+  <tr>
+    <td>Nombre:</td>
+    <td><input type="text" name="nombre" id="nombre" /></td>
+  </tr>
+  <tr>
+    <td>Apellido Paterno:</td>
+    <td><input type="text" name="apellido_paterno" id="apellido_paterno" /></td>
+  </tr>
+  <tr>
+    <td>Apellido Materno:</td>
+    <td><input type="text" name="apellido_materno" id="apellido_materno" /></td>
+  </tr>
+  <tr>
+    <td>Genero:</td>
+    <td>
+      <select name="sexo" id="sexo">
+        <option>Seleccionar...</option>
+        <option value="H">Hombre</option>
+        <option value="M">Mujer</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Estado:</td>
+    <td>
+      <select name="estado" id="estado">
+        <option>Sleccionar..</option>
+        <option value="GT">GUANAJUATO</option> 
+        <option value="GR">GUERRERO</option> 
+        <option value="HG">HIDALGO</option> 
+        <option value="JC">JALISCO</option> 
+        <option value="MC">MEXICO</option> 
+        <option value="MN">MICHOACAN DE OCAMPO</option> 
+        <option value="MS">MORELOS</option> 
+        <option value="NT">NAYARIT</option> 
+        <option value="NL">NUEVO LEON</option> 
+        <option value="OC">OAXACA</option> 
+        <option value="PL">PUEBLA</option> 
+        <option value="QT">QUERETARO DE ARTEAGA</option> 
+        <option value="QR">QUINTANA ROO</option> 
+        <option value="SP">SAN LUIS POTOSI</option> 
+        <option value="SL">SINALOA</option> 
+        <option value="SR">SONORA</option> 
+        <option value="TC">TABASCO</option> 
+        <option value="TS">TAMAULIPAS</option> 
+        <option value="TL">TLAXCALA</option> 
+        <option value="VZ">VERACRUZ</option>
+        <option value="YN">YUCATAN</option> 
+        <option value="ZS">ZACATECAS</option> 
+        <option value="NE">NACIDO EN EL EXTRANJERO</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Fecha de nacimiento:<br>(DD-MM-AAAA)</td>
+    <td>
+      <input type="text" name="dia" id="dia" style="width:20px" maxlength="2" /> 
+      &nbsp;-&nbsp;<input type="text" name="mes" id="mes" style="width:20px" maxlength="2"/> 
+      &nbsp;-&nbsp;<input type="text" name="anio" id="anio" style="width:35px" maxlength="4"/>
+    </td>
+  </tr>
+</table>
+<br/>
+<button id="btn" onclick="calcularCurp()">Calcular</button>
+<br/>
+<br/>
+<input type="text" id="resultado" name="resultado">
+</body>
+</html>

@@ -1,0 +1,175 @@
+<html>
+<body>
+<head>
+<title> TABLA DE DATOS </title>
+</head>
+
+<table border>
+<tr>
+<td>A</td> <td>B</td> <td>C</td>
+</tr>
+<tr>
+<td>D</td> <td>E</td> <td>F</td>
+</tr>
+</table>
+
+<hr>
+<table border>
+<tr>
+<td> ITEM 1 </td>
+<td ROWSPAN=2> ITEM 2 </td>
+<td> ITEM 3 </td>
+</tr>
+<tr>
+<td> ITEM 4 </td> <td> ITEM 5 </td>
+</tr>
+</table>
+
+<hr>
+<table border>
+<tr>
+<td rowspan=2> ITEM 1 </td>
+<td> ITEM 2 </td> <td> ITEM 3 </td> <td> ITEM 4 </td>
+</tr>
+<tr> 
+<td> ITEM 5 </td> <td> ITEM 6 </td> <td> ITEM 7 </td>
+</tr>
+</table>
+
+<hr> <!--EJEMPLO DE COLUMNA EXPANDIDA -->
+<table border>
+<tr>
+<td> ITEM 1 </td>
+<td COLSPAN = 2> ITEM 2 </td>
+</tr>
+<tr>
+<td> ITEM 3 </td> <td> ITEM 4 </td> <td> ITEM 5 </td>
+</tr>
+</table>
+
+<hr> <!-- TABLA CON CABECERAS -->
+<table border>
+<tr> 
+<th> HEAD 1 </th> <th> HEAD 2 </th> <th> HEAD 3 </th>
+</tr> 
+<tr>
+<td> A </td> <td> B </td> <td> C </td>
+</tr>
+<tr>
+<td> D </td> <td> E </td> <td> F </td>
+</tr>
+</table>
+
+<hr> <!-- EJEMPLO DE COLUMNA EXPANDIDA Y CABECERA -->
+<table border> 
+<tr>
+<th COLSPAN = 2> HEAD 1 </th>
+<th COLSPAN = 2> HEAD 2 </th>
+</tr>
+<tr>
+<td> A </td> <td> B </td> <td> C </td> <td> D </td>
+</tr>
+<tr>
+<td> E </td> <td> F </td> <td> G </td> <td> H </td>
+</tr>
+</table>
+
+<hr> <!-- COMBINACION DE CABECERAS MULTIPLES Y COLUMNAS EXPANDIDAS -->
+<table border> 
+<tr> 
+<th COLSPAN = 2> HEAD 1 </th>
+<th COLSPAN = 2> HEAD 2 </th>
+</tr>
+<th> HEAD 3 </th> <th> HEAD 4 </th>
+<th> HEAD 5 </th> <th> HEAD 5 </th>
+</tr>
+<tr>
+<td> A </td> <td> B </td> <td> C </td> <td> D </td>
+</tr>
+<tr>
+<td> E </td> <td> F </td> <td> G </td> <td> H </td>
+</tr>
+</table>
+
+<hr> <!-- CABECERAS LATERALES -->
+<table border>
+<tr> <th>HEAD 1</th>
+<td> ITEM 1 </td> <td> ITEM 2 </td> <td> ITEM 3 </td></tr>
+<tr> <th>HEAD 2</th>
+<td> ITEM 4 </td> <td> ITEM 5 </td> <td> ITEM 6 </td></tr>
+<tr> <th>HEAD 3</th>
+<td> ITEM 7 </td> <td> ITEM 8 </td> <td> ITEM 9 </td></tr>
+</table>
+
+<hr> <!-- CABECERAS LATERALES Y LINEAS EXPANDIDAS -->
+<table border>
+<tr> <th ROWSPAN = 2>HEAD 1</th>
+<td> ITEM 1 </td> <td> ITEM 2 </td> <td> ITEM 3 </td> <td> ITEM 4 </td></tr>
+<td> ITEM 5 </td> <td> ITEM 6 </td> <td> ITEM 7 </td> <td> ITEM 8 </td></tr>
+<tr> <th>HEAD 2</th>
+<td> ITEM 9 </td> <td> ITEM 10 </td> <td> ITEM 11 </td> <td> ITEM 12 </td></tr>
+</table>
+
+<hr> <!-- COMBINACION DE CABECERAS SUPERIORES Y LATERALES, TABLA CENTRADA, CONTENIDOS CENTRADOS Y TITULO AL PIE -->
+<center>
+<table border>
+
+<caption align = bottom> RESUMEN DE TABLAS </caption>
+<tr>
+<td><th>TABLE</th><th>TR</th><th>TD</th><th>TH</th><th>CAPTION</th></td>
+</tr>
+
+<tr align = center>
+<th> BORDER </th><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr>
+
+<tr align = center>
+<th> ROWSPAN </th><td>-</td><td>-</td><td>x</td><td>x</td><td>-</td>
+</tr>
+
+<tr align = center>
+<th> COLSPAN </th><td>-</td><td>-</td><td>x</td><td>x</td><td>-</td>
+</tr>
+
+<tr align = center>
+<th> ALIGN </th><td>-</td><td>x</td><td>x</td><td>x</td><td>x</td>
+</tr>
+
+<tr align = center>
+<th> VALIGN </th><td>-</td><td>-</td><td>x</td><td>-</td><td>-</td>
+</tr>
+
+<tr align = center>
+<th> WIDTH </th><td>x</td><td>-</td><td>x</td><td>-</td><td>-</td>
+</tr>
+
+<tr align = center>
+<th> HEIGTH </th><td>x</td><td>-</td><td>x</td><td>-</td><td>-</td>
+</tr>
+
+<tr align = center>
+<th> CELLPADDING </th><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr>
+
+<tr align = center>
+<th> CELLSPACING </th><td>x</td><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr>
+</table>
+</center>
+
+<hr> <!-- TODOS LOS ELEMENTOS Y PARAMETROS -->
+<table border>
+<tr> <td> <th rowspan = 2></th>
+<th colspan = 2> MEDIA </th></td>
+</tr>
+<tr> <td> <th> ALTURA </th> <th> PESO </th></td>
+</tr>
+<tr> <th rowspan = 2> SEXO </th>
+<th> HOMBRES </th><td>1.9</td><td>85</td>
+</tr>
+<tr> <th> MUJERES </th><td> 1.7 </td><td> 60 </td>
+</tr>
+</table>
+
+</body>
+</html>

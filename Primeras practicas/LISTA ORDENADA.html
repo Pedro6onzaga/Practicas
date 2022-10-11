@@ -1,0 +1,106 @@
+<html>
+<body>
+<head>
+<title> LISTAS ORDENADAS </title>
+</head>
+<ol>								<!-- ENUMERADOS -->
+<li> NARANJAS </li>
+<li> MANZANAS </li>
+<li> BANANAS </li>
+</ol>
+<hr>
+<ul>								<!-- CON PUNTOS -->
+<li> TOMATES </li>
+<li> PEPINOS </li>
+<li> CEBOLLAS </li>
+</ul>
+<hr>
+<dl>								<!-- DEFINICION -->
+<dt> CHOCOLATE </dt>
+<dd> ELABORADO A BASE DE CACAO </dd>		<!-- DT ES PARA EL CONCEPTO -->
+<dt> CARAMELO </dt>
+<dd> ELABORADO A BASE DE AZUCAR </dd>		<!-- DD ES PARA LA DEFINICION -->
+</dl>
+<hr>
+								<!-- <a atributo = "valor"> TEXTO DEL ENLACE </a> --> <!-- ES PARA ABRIR EL ARCHIVO EN OTRA PAGINA -->
+<a href = "http://www.virtualnaura.com/"> LA HOME DE VIRTUAL NAUTA </a>
+<hr>
+								<!-- ES PARA ABRIR EL DOCUMENTO EN OTRA VENTANA -->
+<a href = "http://www.virtualnaura.com/" target = "_blank"> LA HOME DE VIRTUAL NAUTA </a>
+<hr>
+								<!-- SINTAXIS PARA DEFINIR CAPITULOS -->
+<a name = "destino-uno" > CAPITULO 1 </a>	<!-- TEXTO ANTES DEL VINCULO -->
+<a href = "http://www.misitio.com/uno.html#destino-uno"> IR AL CAPITULO UNO </a>	<!-- TEXTO DESPUES DEL DESTINO DEL VINCULO -->
+<a href = "/destino-uno"> IR AL CAPITULO UNO </a> <!-- EN CASO DE QUE EL DOCUMENTO YA ESTE DEFINIDO -->
+
+<hr>								<!-- PARA MANDAR UN MAIL -->
+<a href = "mailto:angelsistemas@gmail.com"> MANDAR E-MAIL </a>
+
+<hr>								<!-- HACER UNA BUSQUEDA CON UNA IMAGEN -->
+<a href = "http://ww.google.com/"><img src ="C:\Users\pedro\OneDrive\Escritorio\paginas en html/IMAGE.JPG"></a>
+
+<hr>							<!--SINTAXIS PARA FORMULARIOS -->	<!-- <form action = "URL" method = "valor"> --> <!-- PARA HACER FORMULARIOS -->
+<form>
+<input type = "control" atributo = "valor">  <!-- SINTAXIS PARA INPUT -->
+</form>
+
+<hr>
+<form>							<!-- PARA INGRESAR DATOS -->
+<form action = "datos.php" method = "get">
+<!-- NOMBRE --> NOMBRE :<input type = "text" name = "nombre">
+<!-- APELLIDO --> APELLIDO :<input type = "text" name = "apellido">
+</form>
+
+<hr>								<!-- RADIO BOTON PARA ELEGIR OPCIONES -->
+<form action = "edades.asp" method = "post">
+¿EDAD? <BR>
+<input type = "radio" name = "edad" value = "menor"> MENOR DE 17 <BR>
+<input type = "radio" name = "edad" value = "adulto"> ENTRE 18 Y 60 <BR>
+<input type = "radio" name = "edad" value = "mayor"> MAYOR DE 61 <BR>
+</form>
+
+<hr>								<!-- CHECKBOX PARA ELEGIR VARIAS OPCIONES -->
+<form action = "hobbie.php" method = "get">
+¿PASATIEMPOS? <br>
+<input type = "checkbox" name = "pasa" value = "tv"> TV <br>
+<input type = "checkbox" name = "pasa" value = "libro"> LIBROS <br>
+<input type = "checkbox" name = "pasa" value = "musica"> MUSICA <br>
+<input type = "checkbox" name = "pasa" value = "otros"> OTROS
+</form>
+
+<hr>								<!-- PASSWORD PARA MOSTRAR PUNTOS EN LUGAR DE CARACTERES -->
+<form action = "verificacion.php" method = "post">
+NOMBRE: <input type = "text" name = "nombre"> <br>
+PASSWORD: <input type = "password" name = "pass">
+</form>
+
+<hr> 								<!-- SUBMIT Y RESET PARA ENVIAR Y BORRAR LOS FORMULARIOS -->
+<form action = "datos_personales.php" method = "post">
+NOMBRE: <input type = "text" name = "nombre"> <br>
+PASSWORD: <input type = "password" name = "secreto"> <br>
+<input type = "submit" value = "ENVIAR">
+<input type = "reset" value = "BORRAR">
+</form>
+
+<hr>								<!-- PARA INGRESAR ARCHIVOS MEDIANTE UN FORMULARIO -->
+
+<form action = "archivo.php" method = "post">
+INGRESE UNA FOTO: <input type = "file" name = "foto">
+</form>
+
+<hr>								<!-- PARA ENVIAR DATOS OCULTOS A OJOS DEL USUARIO -->
+<form action = "oculto.php" method = "post">
+NOMBRE: <input type = "text" name = "nombre"> <br>
+PASSWORD: <input type = "password" name = "contra"> <br>
+<input type = "hidden" value = "cookie">
+</form>
+
+<hr>								<!-- PARA SUSTITUIR UN BOTON POR UNA IMAGEN -->
+<form action = "archivo.php" method = "post">
+NOMBRE: <input type = "text" name = "nombre"> <br>
+PASSWORD: <input type = "password" name = "contra"> <br>
+<input type = "image" src = "C:\Users\pedro\OneDrive\Escritorio\paginas en html/IMAGE.JPG">
+</form>
+
+</body>
+</html>
